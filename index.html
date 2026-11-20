@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Weds Keval ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="invitation">
+
+        <!-- Curtain Opening Controller -->
+        <input type="checkbox" id="open-invitation">
+
+        <!-- Sky Lanterns Canvas (Ascending from bottom to sky on scroll) -->
+        <canvas id="sky-lanterns-canvas" class="sky-lanterns-canvas"></canvas>
+
+        <!-- Initial Welcome Screen / Theater Stage -->
+        <section class="welcome-screen">
+
+            <!-- Top Stage Valance (Pelmet Swag with Gold Fringe & Sparkles) -->
+            <div class="stage-valance">
+                <svg viewBox="0 0 1200 140" preserveAspectRatio="none" class="valance-svg">
+                    <defs>
+                        <linearGradient id="valance-velvet" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#3c0612" />
+                            <stop offset="25%" stop-color="#7a142c" />
+                            <stop offset="55%" stop-color="#a61e3d" />
+                            <stop offset="85%" stop-color="#5e0d20" />
+                            <stop offset="100%" stop-color="#30050e" />
+                        </linearGradient>
+                        <linearGradient id="gold-trim-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#b88931" />
+                            <stop offset="25%" stop-color="#fae39b" />
+                            <stop offset="50%" stop-color="#fdf4d1" />
+                            <stop offset="75%" stop-color="#fae39b" />
+                            <stop offset="100%" stop-color="#b88931" />
+                        </linearGradient>
+                        <filter id="valance-glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+
+                    <!-- Drop shadow below valance -->
+                    <path d="M 0,0 L 1200,0 L 1200,50 Q 1060,98 920,24 Q 600,128 280,24 Q 140,98 0,50 Z"
+                        fill="rgba(0,0,0,0.6)" filter="blur(8px)" />
+
+                    <!-- Deep velvet scalloped swags -->
+                    <path d="M 0,0 L 1200,0 L 1200,45 Q 1060,88 920,20 Q 600,118 280,20 Q 140,88 0,45 Z"
+                        fill="url(#valance-velvet)" />
+
+                    <!-- Draped fold shadow contours -->
+                    <path d="M 280,20 Q 600,82 920,20" stroke="rgba(255,255,255,0.18)" stroke-width="2.5" fill="none" />
+                    <path d="M 320,24 Q 600,96 880,24" stroke="rgba(0,0,0,0.45)" stroke-width="3" fill="none" />
+                    <path d="M 360,28 Q 600,108 840,28" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="none" />
+
+                    <!-- Gold beaded fringe / border -->
+                    <path d="M 0,45 Q 140,88 280,20 Q 600,118 920,20 Q 1060,88 1200,45" stroke="url(#gold-trim-grad)"
+                        stroke-width="3" fill="none" />
+                    <path d="M 0,50 Q 140,93 280,25 Q 600,123 920,25 Q 1060,93 1200,50" stroke="url(#gold-trim-grad)"
+                        stroke-width="5" stroke-linecap="round" stroke-dasharray="0, 14" fill="none"
+                        filter="url(#valance-glow)" />
+
+                    <!-- Peak sparkles -->
+                    <g transform="translate(280, 20)">
+                        <ellipse cx="0" cy="0" rx="16" ry="2.5" fill="#fffdec" filter="blur(1px)" />
+                        <ellipse cx="0" cy="0" rx="2.5" ry="16" fill="#fffdec" filter="blur(1px)" />
+                        <circle cx="0" cy="0" r="3.5" fill="#ffffff" />
+                        <circle cx="0" cy="0" r="9" fill="rgba(255,235,160,0.5)" filter="blur(2px)" />
+                    </g>
+                    <g transform="translate(920, 20)">
+                        <ellipse cx="0" cy="0" rx="16" ry="2.5" fill="#fffdec" filter="blur(1px)" />
+                        <ellipse cx="0" cy="0" rx="2.5" ry="16" fill="#fffdec" filter="blur(1px)" />
+                        <circle cx="0" cy="0" r="3.5" fill="#ffffff" />
+                        <circle cx="0" cy="0" r="9" fill="rgba(255,235,160,0.5)" filter="blur(2px)" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Revealed Content (Visible after curtains open, framed on stage) -->
+            <div class="welcome-content">
+                <p class="subtitle">A Celebration of Love</p>
+
+                <div class="traditional-tag">शुभ विवाह</div>
+
+                <div class="arch-frame-wrapper">
+                    <!-- Arch Apex Finial / Kalash Ornament -->
+                    <div class="arch-finial" aria-hidden="true">✦</div>
+
+                    <!-- Background Mandala Aura SVG -->
+                    <svg class="mandala-aura" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="220" cy="220" r="210" stroke="rgba(216,181,109,0.25)" stroke-width="1.2" stroke-dasharray="4 4"/>
+                        <circle cx="220" cy="220" r="195" stroke="rgba(216,181,109,0.38)" stroke-width="1.5"/>
+                        <circle cx="220" cy="220" r="170" stroke="rgba(216,181,109,0.25)" stroke-width="1"/>
+                        
+                        <!-- Outer 24 Lotus Petals -->
+                        <g stroke="rgba(216,181,109,0.32)" stroke-width="1.2">
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(15 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(30 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(45 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(60 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(75 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(90 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(105 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(120 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(135 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(150 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(165 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(180 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(195 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(210 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(225 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(240 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(255 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(270 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(285 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(300 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(315 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(330 220 220)" />
+                            <path d="M 220,25 Q 234,105 220,185 Q 206,105 220,25" transform="rotate(345 220 220)" />
+                        </g>
+                        
+                        <!-- Middle 12 Lotus Petals -->
+                        <g stroke="rgba(216,181,109,0.45)" stroke-width="1.4">
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(15 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(45 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(75 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(105 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(135 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(165 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(195 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(225 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(255 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(285 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(315 220 220)" />
+                            <path d="M 220,60 Q 232,130 220,200 Q 208,130 220,60" transform="rotate(345 220 220)" />
+                        </g>
+
+                        <!-- Inner Circle with dots -->
+                        <circle cx="220" cy="220" r="125" stroke="rgba(216,181,109,0.48)" stroke-width="1.5" stroke-dasharray="6 4"/>
+                    </svg>
+
+                    <!-- Arched Photo Frame -->
+                    <div class="couple-arch" role="img" aria-label="Honey & Keval wedding portrait">
+                        <div class="arch-img-wrap">
+                            <img src="couple-portrait.jpg" alt="Honey & Keval smiling together">
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Honey <span>Weds</span> Keval</h1>
+
+                <p class="welcome-message">
+                    Two hearts, one beautiful journey.
+                    <br>
+                    Join us as we begin our forever.
+                </p>
+
+                <!-- Interactive Wedding Date Scratch Section (Single Card for whole date) -->
+                <div class="scratch-date-container">
+                    <p class="scratch-instruction">✦ Scratch to unveil our wedding date ✦</p>
+                    <div class="scratch-cards-row">
+                        <!-- Single Date Scratch Card -->
+                        <div class="scratch-card" data-label="WEDDING DATE">
+                            <div class="scratch-underlay">
+                                <span class="scratch-val">05 DECEMBER 2026</span>
+                                <span class="scratch-tag">SATURDAY</span>
+                            </div>
+                            <canvas class="scratch-canvas" width="310" height="90"></canvas>
+                        </div>
+                    </div>
+                    <div class="date-revealed-banner" id="date-revealed-banner">
+                        ✦ 05 • DEC • 2026 ✦ Our Wedding Date is Unveiled!
+                    </div>
+                    <p class="scratch-subhint">Touch or drag to scratch</p>
+                </div>
+
+                <!-- Reverse Countdown Timer to 5 Dec 2026 -->
+                <div class="countdown-container">
+                    <p class="countdown-title">Counting Down To Our Forever</p>
+                    <div class="countdown-clock">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-days">16</span>
+                            <span class="countdown-label">DAYS</span>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-hours">00</span>
+                            <span class="countdown-label">HOURS</span>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-mins">00</span>
+                            <span class="countdown-label">MINS</span>
+                        </div>
+                        <span class="countdown-separator">:</span>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-secs">00</span>
+                            <span class="countdown-label">SECS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#wedding-invitation" class="open-button scroll-to-invitation">
+                    View Invitation <span>↓</span>
+                </a>
+
+                <p class="hint">Scroll to explore our special day</p>
+            </div>
+
+            <!-- Left Curtain -->
+            <label for="open-invitation" class="curtain curtain-left" aria-label="Open left curtain" role="button"
+                tabindex="0"></label>
+
+            <!-- Right Curtain -->
+            <label for="open-invitation" class="curtain curtain-right" aria-label="Open right curtain" role="button"
+                tabindex="0"></label>
+
+            <!-- Wax Seal Stamp (Seals the curtains) -->
+            <label for="open-invitation" class="wax-seal" title="Click to open invitation" aria-label="Open invitation"
+                role="button" tabindex="0">
+                <div class="wax-strings"></div>
+                <div class="wax-stamp">
+                    <div class="wax-rim">
+                        <img src="hk-logo-transparent.png" alt="HK Initial" class="wax-logo">
+                    </div>
+                </div>
+                <span class="wax-hint">
+                    <span class="wax-sparkle">✧</span>
+                    Click to open invitation
+                    <span class="wax-sparkle">✧</span>
+                </span>
+            </label>
+
+        </section>
+
+        <!-- Wedding Invitation Reveal -->
+        <section class="invitation-content" id="wedding-invitation">
+
+            <div class="invitation-inner">
+
+                <p class="top-text">
+                    Together with our families
+                </p>
+
+                <div class="decorative-line">✦ ❀ ✦</div>
+
+                <div class="couple-invitation-names">
+                    <h2 class="couple-name">Honey</h2>
+                    <p class="parentage-text">Daughter of Piyush Patel and Kinjal Patel</p>
+                    <span class="couple-weds">Weds</span>
+                    <h2 class="couple-name">Keval</h2>
+                    <p class="parentage-text">Son of Pankaj Bhagat and Ketna Bhagat</p>
+                </div>
+
+                <p class="invitation-message">
+                    With immense joy and happiness,
+                    we invite you to celebrate the beginning
+                    of our beautiful journey together.
+                </p>
+
+                <div class="divider">❧</div>
+
+                <div class="wedding-details">
+
+                    <!-- Grah Shantak (Left) -->
+                    <div class="detail-box">
+                        <span>❀</span>
+                        <h3>Grah Shantak</h3>
+                        <p>12:30 PM Onwards</p>
+                        <small>Followed by Lunch at 4:30 PM</small>
+                    </div>
+
+                    <!-- Wedding (Right) -->
+                    <div class="detail-box">
+                        <span>✧</span>
+                        <h3>Wedding</h3>
+                        <p>5 December 2026</p>
+                        <small>Saturday</small>
+                    </div>
+
+                    <!-- Wedding Venue (Below in the Middle) -->
+                    <div class="detail-box detail-box-venue">
+                        <span>⌖</span>
+                        <h3>Wedding Venue</h3>
+                        <p><a href="https://maps.app.goo.gl/v9FxoDVpB35sMNLo7" target="_blank" rel="noopener noreferrer"
+                                class="venue-name-link" title="Open in Google Maps">Sai Darshan Hall</a></p>
+                        <small>
+                            <a href="https://maps.app.goo.gl/v9FxoDVpB35sMNLo7" target="_blank"
+                                rel="noopener noreferrer" class="venue-map-link" title="Open in Google Maps">
+                                Pardi 📍
+                            </a>
+                        </small>
+                    </div>
+
+                </div>
+
+                <!-- <div class="events">
+                    <h3>Our Wedding Celebrations</h3>
+
+                    <p>Haldi Ceremony</p>
+                    <p>Mehendi Ceremony</p>
+                    <p>Wedding Ceremony</p>
+                    <p>Reception</p>
+                </div> -->
+
+                <p class="closing-message">
+                    Your presence will make our celebration
+                    even more special.
+                </p>
+
+                <h3 class="signature">
+                    With Love,
+                    <br>
+                    Honey & Keval ❤️
+                </h3>
+
+                <div class="decorative-line">✦ ❀ ✦</div>
+
+            </div>
+
+        </section>
+
+        <!-- Wedding Photo Gallery Section / Photobook -->
+        <section class="gallery-section" id="wedding-gallery">
+            <div class="gallery-inner">
+                <div class="book-header">
+                    <p class="top-tag">A Glimpse Into Our Journey</p>
+                    <div class="decorative-line">✦ ❀ ✦</div>
+                    <h2 class="gallery-title">Our Little Moments</h2>
+                    <p class="gallery-subtitle">Turn the pages through a few of our favourites.</p>
+                </div>
+
+                <div class="book-stage-wrapper">
+                    <!-- Hanging Garlands flanking book (Left) -->
+                    <div class="garland-side garland-left" aria-hidden="true">
+                        <div class="garland-string">
+                            <div class="marigold orange"></div>
+                            <div class="marigold yellow"></div>
+                            <div class="marigold orange"></div>
+                            <div class="marigold yellow"></div>
+                            <div class="marigold orange"></div>
+                        </div>
+                        <div class="garland-tassel"></div>
+                    </div>
+
+                    <!-- 3D Book Stage -->
+                    <div class="book-stage">
+                        <div class="book" id="photobook" role="region" aria-label="Interactive Wedding Photobook - Turn pages to view our photos">
+                            <div class="book-spine-fold"></div>
+
+                            <!-- Left Base Page: Page 1 (Our Little Moments) -->
+                            <div class="book-page book-page-left" id="page-1">
+                                <div class="page-gold-border"></div>
+                                <div class="intro-text-box">
+                                    <h3>Our little moments</h3>
+                                    <div class="ornament">✦ ❀ ✦</div>
+                                    <p>a few pages from our story, before the next chapter begins</p>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 1: Front = Page 2 (Polaroid 1), Back = Page 3 (Polaroid 2) -->
+                            <div class="book-sheet" id="sheet-1">
+                                <div class="sheet-face sheet-front" id="page-2">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-right">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: he still looks at her like this">
+                                            <img src="Copy of _DS_3238.JPG" alt="Honey & Keval smiling together at picnic in the park" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">he still looks at her like this</p>
+                                    </div>
+                                </div>
+                                <div class="sheet-face sheet-back" id="page-3">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-left">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: forehead to forehead, always">
+                                            <img src="Copy of _DS_3412.JPG" alt="Holding hands with beautiful flower bouquet and engagement ring" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">Hand in hand, always</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 2: Front = Page 4 (Polaroid 3), Back = Page 5 (Polaroid 4) -->
+                            <div class="book-sheet" id="sheet-2">
+                                <div class="sheet-face sheet-front" id="page-4">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-right">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: home is right here">
+                                            <img src="Copy of _DS_3578.JPG" alt="Dancing with joy on the sea beach at sunset" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">home is right here</p>
+                                    </div>
+                                </div>
+                                <div class="sheet-face sheet-back" id="page-5">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-left">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: in your arms, forever">
+                                            <img src="Copy of _DS_3657.JPG" alt="Sweet romantic embrace on the beach shore" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">in your arms, forever</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sheet 3: Front = Page 6 (Polaroid 5), Back = Page 7 (Polaroid 6) -->
+                            <div class="book-sheet" id="sheet-3">
+                                <div class="sheet-face sheet-front" id="page-6">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-right">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: every moment with you">
+                                            <img src="moment-grass.jpg" alt="Honey & Keval embracing in nature" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">every moment with you</p>
+                                    </div>
+                                </div>
+                                <div class="sheet-face sheet-back" id="page-7">
+                                    <div class="page-gold-border"></div>
+                                    <div class="polaroid polaroid-rot-left">
+                                        <div class="polaroid-tape"></div>
+                                        <div class="polaroid-img-wrap" tabindex="0" role="button" aria-label="Enlarge photo: chasing sunsets together">
+                                            <img src="moment-sunset.jpg" alt="Honey & Keval holding hands at sunset on the beach" loading="lazy">
+                                        </div>
+                                        <p class="polaroid-caption">chasing sunsets together</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right Base Page: Page 8 (Outro / Forever Begins) -->
+                            <div class="book-page book-page-right" id="page-8">
+                                <div class="page-gold-border"></div>
+                                <div class="outro-text-box">
+                                    <img src="hk-logo-gold.png" alt="HK Monogram" class="outro-logo">
+                                    <h3>And so our forever begins...</h3>
+                                    <p class="date-highlight">✦ 5th December 2026 ✦</p>
+                                    <p>Two hearts, one love, one lifetime of adventures together.</p>
+                                    <p class="sign-off">With love, Honey & Keval ❤️</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Hanging Garlands flanking book (Right) -->
+                    <div class="garland-side garland-right" aria-hidden="true">
+                        <div class="garland-string">
+                            <div class="marigold orange"></div>
+                            <div class="marigold yellow"></div>
+                            <div class="marigold orange"></div>
+                            <div class="marigold yellow"></div>
+                            <div class="marigold orange"></div>
+                        </div>
+                        <div class="garland-tassel"></div>
+                    </div>
+                </div>
+
+                <!-- Photobook Controls -->
+                <div class="book-controls">
+                    <button type="button" class="book-btn book-btn-prev" id="btn-prev" aria-label="Previous Page" disabled>‹</button>
+                    <span class="page-indicator" id="page-indicator" aria-live="polite">1 / 4</span>
+                    <button type="button" class="book-btn" id="btn-next">Next page <span>›</span></button>
+                </div>
+
+                <div class="decorative-line" style="margin-top: 25px;">✦ ❀ ✦</div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal for Full View -->
+        <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close Preview">&times;</button>
+            <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged photo">
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+
+        <!-- Date Reveal Celebration Sparkle Popup -->
+        <div class="date-sparkle-modal" id="date-sparkle-modal" role="dialog" aria-modal="true" aria-label="Wedding Date Announcement">
+            <canvas id="sparkle-canvas" class="sparkle-canvas"></canvas>
+            
+            <div class="sparkle-modal-card">
+                <button class="sparkle-close-btn" id="sparkle-close-btn" aria-label="Close Announcement">&times;</button>
+                
+                <span class="modal-corner modal-corner-tl"></span>
+                <span class="modal-corner modal-corner-tr"></span>
+                <span class="modal-corner modal-corner-bl"></span>
+                <span class="modal-corner modal-corner-br"></span>
+
+                <div class="modal-sparkles-ambient">
+                    <span class="ambient-star s1">✦</span>
+                    <span class="ambient-star s2">✧</span>
+                    <span class="ambient-star s3">✨</span>
+                    <span class="ambient-star s4">✦</span>
+                    <span class="ambient-star s5">✧</span>
+                    <span class="ambient-star s6">✨</span>
+                </div>
+
+                <div class="sparkle-modal-header">
+                    <p class="modal-auspicious">॥ शुभ विवाह ॥</p>
+                    <div class="modal-badge">
+                        <span class="badge-star">✨</span>
+                        <span class="badge-text">SAVE THE DATE</span>
+                        <span class="badge-star">✨</span>
+                    </div>
+                    <h2 class="modal-couple-names">Honey <span class="weds-amp">&</span> Keval</h2>
+                </div>
+
+                <div class="sparkle-date-badge">
+                    <div class="sparkle-date-glow"></div>
+                    <p class="sparkle-date-main">05 DECEMBER 2026</p>
+                    <p class="sparkle-date-sub">SATURDAY</p>
+                </div>
+
+                <div class="sparkle-venue-pill">
+                    <span class="venue-pin">📍</span>
+                    <span class="venue-name">Sai Darshan Hall, Pardi</span>
+                </div>
+
+                <p class="sparkle-modal-quote">
+                    “Two souls, one heartbeat. We invite you to be part of our most cherished milestone.”
+                </p>
+
+                <div class="sparkle-modal-actions">
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Honey+%26+Keval%27s+Wedding&dates=20261205T043000Z/20261205T173000Z&details=Wedding+Ceremony+of+Honey+and+Keval+at+Sai+Darshan+Hall,+Pardi.+Venue+Map:+https://maps.app.goo.gl/v9FxoDVpB35sMNLo7&location=Sai+Darshan+Hall,+Pardi" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="sparkle-action-btn primary-cal-btn" 
+                       id="add-calendar-btn">
+                        <span>📅 Add To Calendar</span>
+                    </a>
+                    <button type="button" class="sparkle-action-btn secondary-btn" id="sparkle-explore-btn">
+                        <span>View Details ↓</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('open-invitation');
+            const curtains = document.querySelectorAll('.curtain');
+            const waxSeal = document.querySelector('.wax-seal');
+            const scrollBtn = document.querySelector('.scroll-to-invitation');
+            const invitationContent = document.querySelector('.invitation-content');
+            const dateBanner = document.getElementById('date-revealed-banner');
+            const lanternsCanvas = document.getElementById('sky-lanterns-canvas');
+            const welcomeScreen = document.querySelector('.welcome-screen');
+
+            // ==========================================
+            // SKY LANTERNS FLYING ANIMATION SYSTEM
+            // (Constrained to strictly below the curtains)
+            // ==========================================
+            class SkyLanternsManager {
+                constructor(canvas) {
+                    this.canvas = canvas;
+                    this.ctx = canvas.getContext('2d');
+                    this.welcomeScreen = welcomeScreen;
+                    this.lanterns = [];
+                    this.sparks = [];
+                    this.isActive = false;
+                    this.hasDateBeenRevealed = false;
+                    this.lastScrollY = window.scrollY || window.pageYOffset || 0;
+                    this.scrollVelocity = 0;
+                    this.targetVelocity = 0;
+                    this.dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    this.animId = null;
+
+                    this.resize();
+                    this.init();
+                }
+
+                getCutoffY() {
+                    if (!this.welcomeScreen) return window.innerHeight;
+                    const rect = this.welcomeScreen.getBoundingClientRect();
+                    return rect.bottom;
+                }
+
+                init() {
+                    window.addEventListener('resize', () => this.resize());
+
+                    // Downward scroll boosts upward lantern velocity
+                    let scrollTimeout = null;
+                    window.addEventListener('scroll', () => {
+                        const currentY = window.scrollY || window.pageYOffset || 0;
+                        const delta = currentY - this.lastScrollY;
+                        this.lastScrollY = currentY;
+
+                        if (delta > 0) {
+                            this.targetVelocity = Math.min(this.targetVelocity + delta * 0.35, 18);
+                            const cutoffY = this.getCutoffY();
+                            // Only spawn if the invitation section is visible on screen, at a subtle rate
+                            if (cutoffY < this.height && Math.random() < 0.1) {
+                                this.spawnLantern(true);
+                            }
+                        } else if (delta < 0) {
+                            this.targetVelocity = Math.max(this.targetVelocity + delta * 0.08, -2);
+                        }
+
+                        clearTimeout(scrollTimeout);
+                        scrollTimeout = setTimeout(() => {
+                            this.targetVelocity = 0;
+                        }, 90);
+                    }, { passive: true });
+
+                    // Click below curtains to launch a lantern
+                    window.addEventListener('click', (e) => {
+                        if (!checkbox.checked) return;
+                        const cutoffY = this.getCutoffY();
+                        // NEVER spawn inside or above the curtains stage
+                        if (e.clientY < cutoffY) return;
+                        if (e.target.closest('.scratch-card') || e.target.closest('.open-button')) return;
+                        this.spawnLanternAt(e.clientX, e.clientY + 40);
+                    });
+
+                    // Modest, elegant lantern count (reduced significantly from previous)
+                    const isMobile = window.innerWidth < 600;
+                    const count = isMobile ? 6 : 14;
+                    for (let i = 0; i < count; i++) {
+                        this.spawnLantern(false);
+                    }
+
+                    // Gentle rising ember sparks (reduced)
+                    const sparkCount = isMobile ? 6 : 14;
+                    for (let i = 0; i < sparkCount; i++) {
+                        this.spawnSpark();
+                    }
+
+                    this.start();
+                }
+
+                resize() {
+                    this.width = window.innerWidth;
+                    this.height = window.innerHeight;
+                    this.canvas.width = this.width * this.dpr;
+                    this.canvas.height = this.height * this.dpr;
+                    this.ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+                }
+
+                spawnLantern(atBottom = true, customY = null) {
+                    const cutoffY = this.getCutoffY();
+                    const rand = Math.random();
+                    let layer = 0; // 0 = distant, 1 = midground, 2 = foreground
+                    if (rand > 0.8) layer = 2;
+                    else if (rand > 0.5) layer = 1;
+
+                    let baseWidth, baseHeight, speed, alpha, depthFactor;
+                    if (layer === 0) {
+                        baseWidth = 12 + Math.random() * 10;
+                        baseHeight = baseWidth * (1.3 + Math.random() * 0.18);
+                        speed = 0.35 + Math.random() * 0.35;
+                        alpha = 0.5 + Math.random() * 0.3;
+                        depthFactor = 0.4;
+                    } else if (layer === 1) {
+                        baseWidth = 24 + Math.random() * 14;
+                        baseHeight = baseWidth * (1.32 + Math.random() * 0.18);
+                        speed = 0.65 + Math.random() * 0.5;
+                        alpha = 0.78 + Math.random() * 0.18;
+                        depthFactor = 0.75;
+                    } else {
+                        baseWidth = 44 + Math.random() * 18;
+                        baseHeight = baseWidth * (1.35 + Math.random() * 0.2);
+                        speed = 1.1 + Math.random() * 0.7;
+                        alpha = 0.9 + Math.random() * 0.1;
+                        depthFactor = 1.2;
+                    }
+
+                    // Always position below the curtains line
+                    const spawnMinY = Math.max(cutoffY + 40, this.height * 0.6);
+                    let y;
+                    if (customY !== null) {
+                        y = Math.max(cutoffY + 20, customY);
+                    } else if (atBottom) {
+                        y = Math.max(cutoffY + 50, this.height) + baseHeight + Math.random() * 80;
+                    } else {
+                        y = spawnMinY + Math.random() * Math.max(80, this.height - spawnMinY + 60);
+                    }
+
+                    const x = Math.random() * this.width;
+
+                    this.lanterns.push({
+                        x: x,
+                        baseX: x,
+                        y: y,
+                        width: baseWidth,
+                        height: baseHeight,
+                        layer: layer,
+                        speed: speed,
+                        depthFactor: depthFactor,
+                        alpha: alpha,
+                        currentAlpha: alpha,
+                        swayAmp: 8 + Math.random() * 15 * (layer + 1),
+                        swayFreq: 0.0012 + Math.random() * 0.0015,
+                        swayPhase: Math.random() * Math.PI * 2,
+                        flickerSeed: Math.random() * 100,
+                        rotation: 0
+                    });
+
+                    const isMobile = window.innerWidth < 600;
+                    const maxCap = isMobile ? 12 : 18;
+                    if (this.lanterns.length > maxCap) {
+                        this.lanterns.shift();
+                    }
+                }
+
+                spawnLanternAt(x, y) {
+                    const cutoffY = this.getCutoffY();
+                    if (y < cutoffY) return;
+                    const baseWidth = 32 + Math.random() * 16;
+                    const baseHeight = baseWidth * 1.35;
+                    this.lanterns.push({
+                        x: x,
+                        baseX: x,
+                        y: y,
+                        width: baseWidth,
+                        height: baseHeight,
+                        layer: 2,
+                        speed: 1.0 + Math.random() * 0.6,
+                        depthFactor: 1.1,
+                        alpha: 0.92,
+                        currentAlpha: 0.92,
+                        swayAmp: 14,
+                        swayFreq: 0.0016,
+                        swayPhase: Math.random() * Math.PI * 2,
+                        flickerSeed: Math.random() * 100,
+                        rotation: 0
+                    });
+                }
+
+                spawnSpark(customY = null) {
+                    const cutoffY = this.getCutoffY();
+                    const spawnMinY = Math.max(cutoffY + 30, this.height * 0.6);
+                    this.sparks.push({
+                        x: Math.random() * this.width,
+                        y: customY !== null ? Math.max(cutoffY + 20, customY) : spawnMinY + Math.random() * Math.max(80, this.height - spawnMinY),
+                        size: 1 + Math.random() * 2,
+                        speedY: 0.6 + Math.random() * 1.2,
+                        speedX: (Math.random() - 0.5) * 0.5,
+                        alpha: 0.35 + Math.random() * 0.65,
+                        decay: 0.002 + Math.random() * 0.003
+                    });
+
+                    if (this.sparks.length > 20) {
+                        this.sparks.shift();
+                    }
+                }
+
+                burstCelebration(count = 5) {
+                    for (let i = 0; i < count; i++) {
+                        setTimeout(() => {
+                            this.spawnLantern(true);
+                            this.spawnSpark();
+                        }, i * 110);
+                    }
+                }
+
+                start() {
+                    if (this.animId) return;
+                    const loop = (timestamp) => {
+                        this.update(timestamp);
+                        this.draw(timestamp);
+                        this.animId = requestAnimationFrame(loop);
+                    };
+                    this.animId = requestAnimationFrame(loop);
+                }
+
+                update(timestamp) {
+                    this.scrollVelocity += (this.targetVelocity - this.scrollVelocity) * 0.14;
+                    const dateMultiplier = this.hasDateBeenRevealed ? 1.2 : 1.0;
+                    const cutoffY = this.getCutoffY();
+
+                    for (let i = 0; i < this.lanterns.length; i++) {
+                        const l = this.lanterns[i];
+                        const scrollBoost = Math.max(0, this.scrollVelocity) * l.depthFactor;
+                        l.y -= (l.speed * dateMultiplier + scrollBoost);
+
+                        const sway = Math.sin(timestamp * l.swayFreq + l.swayPhase);
+                        l.x = l.baseX + sway * l.swayAmp;
+                        l.rotation = sway * 0.05;
+
+                        // Distance from cutoff line (bottom of curtains)
+                        const distFromCutoff = l.y - cutoffY;
+
+                        // Recycle if reached or crossed above the curtains line
+                        if (distFromCutoff <= 5) {
+                            l.y = Math.max(cutoffY, this.height) + l.height + 30 + Math.random() * 80;
+                            l.baseX = Math.random() * this.width;
+                            l.x = l.baseX;
+                            l.currentAlpha = 0;
+                        } else if (distFromCutoff < 120) {
+                            // Smooth fade-out before touching the curtains line
+                            l.currentAlpha = l.alpha * (distFromCutoff / 120);
+                        } else {
+                            l.currentAlpha = l.alpha;
+                        }
+                    }
+
+                    for (let i = 0; i < this.sparks.length; i++) {
+                        const s = this.sparks[i];
+                        s.y -= (s.speedY + Math.max(0, this.scrollVelocity) * 0.4);
+                        s.x += s.speedX;
+                        s.alpha -= s.decay;
+
+                        if (s.y <= cutoffY + 15 || s.alpha <= 0) {
+                            s.y = Math.max(cutoffY, this.height) + Math.random() * 40;
+                            s.x = Math.random() * this.width;
+                            s.alpha = 0.35 + Math.random() * 0.65;
+                        }
+                    }
+                }
+
+                draw(timestamp) {
+                    const cutoffY = this.getCutoffY();
+
+                    // If entire viewport is inside the welcome screen/curtains, clear and draw nothing
+                    if (cutoffY >= this.height) {
+                        this.ctx.clearRect(0, 0, this.width, this.height);
+                        return;
+                    }
+
+                    this.ctx.clearRect(0, 0, this.width, this.height);
+
+                    // Strictly clip drawing to below the curtains line
+                    this.ctx.save();
+                    const clipY = Math.max(0, cutoffY);
+                    this.ctx.beginPath();
+                    this.ctx.rect(0, clipY, this.width, this.height - clipY);
+                    this.ctx.clip();
+
+                    this.lanterns.sort((a, b) => a.layer - b.layer);
+
+                    for (let i = 0; i < this.lanterns.length; i++) {
+                        const l = this.lanterns[i];
+                        if (l.currentAlpha > 0.01 && l.y >= cutoffY) {
+                            this.drawLantern(l, timestamp);
+                        }
+                    }
+
+                    for (let i = 0; i < this.sparks.length; i++) {
+                        const s = this.sparks[i];
+                        if (s.y >= cutoffY) {
+                            this.ctx.fillStyle = `rgba(255, 215, 110, ${s.alpha})`;
+                            this.ctx.beginPath();
+                            this.ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                            this.ctx.fill();
+                        }
+                    }
+
+                    this.ctx.restore();
+                }
+
+                drawLantern(l, timestamp) {
+                    const ctx = this.ctx;
+                    ctx.save();
+                    ctx.translate(l.x, l.y);
+                    ctx.rotate(l.rotation);
+
+                    const w = l.width;
+                    const h = l.height;
+                    const flicker = 0.94 + Math.sin(l.flickerSeed + timestamp * 0.008) * 0.06;
+                    const currentAlpha = l.currentAlpha;
+
+                    // 1. Soft radial outer glow aura
+                    const glowRadius = Math.max(w, h) * 1.4;
+                    const glowGrad = ctx.createRadialGradient(0, -h * 0.25, 0, 0, -h * 0.25, glowRadius);
+                    glowGrad.addColorStop(0, `rgba(255, 185, 55, ${0.42 * currentAlpha * flicker})`);
+                    glowGrad.addColorStop(0.35, `rgba(255, 125, 25, ${0.2 * currentAlpha * flicker})`);
+                    glowGrad.addColorStop(0.7, `rgba(220, 65, 15, ${0.07 * currentAlpha * flicker})`);
+                    glowGrad.addColorStop(1, 'rgba(200, 45, 10, 0)');
+                    ctx.fillStyle = glowGrad;
+                    ctx.beginPath();
+                    ctx.arc(0, -h * 0.25, glowRadius, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // 2. Translucent paper body outline
+                    ctx.beginPath();
+                    ctx.moveTo(-w * 0.5, 0);
+                    ctx.bezierCurveTo(-w * 0.56, -h * 0.38, -w * 0.52, -h * 0.75, -w * 0.42, -h);
+                    ctx.quadraticCurveTo(0, -h * 1.08, w * 0.42, -h);
+                    ctx.bezierCurveTo(w * 0.52, -h * 0.75, w * 0.56, -h * 0.38, w * 0.5, 0);
+                    ctx.bezierCurveTo(w * 0.35, h * 0.14, -w * 0.35, h * 0.14, -w * 0.5, 0);
+                    ctx.closePath();
+
+                    // Illuminated warm rice paper gradient
+                    const paperGrad = ctx.createLinearGradient(0, 0, 0, -h);
+                    paperGrad.addColorStop(0, `rgba(255, 238, 165, ${0.98 * currentAlpha})`);
+                    paperGrad.addColorStop(0.18, `rgba(255, 198, 75, ${0.94 * currentAlpha})`);
+                    paperGrad.addColorStop(0.55, `rgba(245, 145, 35, ${0.88 * currentAlpha})`);
+                    paperGrad.addColorStop(0.85, `rgba(220, 85, 20, ${0.82 * currentAlpha})`);
+                    paperGrad.addColorStop(1, `rgba(185, 55, 15, ${0.76 * currentAlpha})`);
+                    ctx.fillStyle = paperGrad;
+                    ctx.fill();
+
+                    // Vertical ribs on medium and large lanterns
+                    if (w > 25) {
+                        ctx.strokeStyle = `rgba(180, 60, 10, ${0.2 * currentAlpha})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(-w * 0.22, 0);
+                        ctx.quadraticCurveTo(-w * 0.26, -h * 0.5, -w * 0.18, -h * 0.98);
+                        ctx.stroke();
+
+                        ctx.beginPath();
+                        ctx.moveTo(w * 0.22, 0);
+                        ctx.quadraticCurveTo(w * 0.26, -h * 0.5, w * 0.18, -h * 0.98);
+                        ctx.stroke();
+                    }
+
+                    // 3. Bottom wire rim
+                    ctx.beginPath();
+                    ctx.ellipse(0, 0, w * 0.46, h * 0.11, 0, 0, Math.PI * 2);
+                    ctx.strokeStyle = `rgba(80, 25, 5, ${0.65 * currentAlpha})`;
+                    ctx.lineWidth = Math.max(1, w * 0.035);
+                    ctx.stroke();
+
+                    // Wire crossbar
+                    if (w > 20) {
+                        ctx.beginPath();
+                        ctx.moveTo(-w * 0.4, 0);
+                        ctx.lineTo(w * 0.4, 0);
+                        ctx.strokeStyle = `rgba(70, 20, 5, ${0.45 * currentAlpha})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+
+                    // 4. Burning flame at the bottom center
+                    const flameSize = Math.max(3, w * 0.22) * flicker;
+                    const flameGrad = ctx.createRadialGradient(0, -h * 0.03, 0, 0, -h * 0.03, flameSize * 2.2);
+                    flameGrad.addColorStop(0, `rgba(255, 255, 240, ${1 * currentAlpha})`);
+                    flameGrad.addColorStop(0.35, `rgba(255, 220, 65, ${0.9 * currentAlpha})`);
+                    flameGrad.addColorStop(0.7, `rgba(255, 125, 25, ${0.6 * currentAlpha})`);
+                    flameGrad.addColorStop(1, 'rgba(255, 80, 0, 0)');
+                    ctx.fillStyle = flameGrad;
+                    ctx.beginPath();
+                    ctx.arc(0, -h * 0.03, flameSize * 2.2, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // White-hot flame core
+                    ctx.fillStyle = `rgba(255, 255, 255, ${0.98 * currentAlpha})`;
+                    ctx.beginPath();
+                    ctx.ellipse(0, -h * 0.03, flameSize * 0.45, flameSize * 0.7, 0, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.restore();
+                }
+            }
+
+            const lanterns = new SkyLanternsManager(lanternsCanvas);
+
+            // ==========================================
+            // CURTAIN OPENING HANDLER
+            // ==========================================
+            function openInvitation(e) {
+                if (checkbox.checked) return;
+                if (e) e.preventDefault();
+                checkbox.checked = true;
+                checkbox.dispatchEvent(new Event('change'));
+            }
+
+            if (waxSeal) {
+                waxSeal.addEventListener('click', openInvitation);
+                waxSeal.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        openInvitation(e);
+                    }
+                });
+            }
+
+            curtains.forEach(function (curtain) {
+                curtain.addEventListener('click', openInvitation);
+                curtain.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        openInvitation(e);
+                    }
+                });
+            });
+
+            // ==========================================
+            // VIEW INVITATION SCROLL BUTTON
+            // ==========================================
+            let isManualScroll = false;
+            if (scrollBtn) {
+                scrollBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    isManualScroll = true;
+                    // If scratch cards not yet revealed, reveal them nicely!
+                    document.querySelectorAll('.scratch-card:not(.is-revealed)').forEach(revealCard);
+                    checkAllCardsRevealed();
+                    isManualScroll = false;
+
+                    if (invitationContent) {
+                        invitationContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            }
+
+            // ==========================================
+            // REVERSE COUNTDOWN TIMER TO 5 DEC 2026
+            // ==========================================
+            const targetDate = new Date(2026, 11, 5, 10, 0, 0).getTime();
+            const daysEl = document.getElementById('cd-days');
+            const hoursEl = document.getElementById('cd-hours');
+            const minsEl = document.getElementById('cd-mins');
+            const secsEl = document.getElementById('cd-secs');
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance <= 0) {
+                    if (daysEl) daysEl.textContent = '00';
+                    if (hoursEl) hoursEl.textContent = '00';
+                    if (minsEl) minsEl.textContent = '00';
+                    if (secsEl) secsEl.textContent = '00';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                if (daysEl) daysEl.textContent = days < 10 ? '0' + days : days;
+                if (hoursEl) hoursEl.textContent = hours < 10 ? '0' + hours : hours;
+                if (minsEl) minsEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+                if (secsEl) secsEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+
+            // ==========================================
+            // INTERACTIVE SCRATCH CARDS (DATE, MONTH, YEAR)
+            // ==========================================
+            const scratchCards = document.querySelectorAll('.scratch-card');
+
+            function revealCard(card) {
+                if (card.classList.contains('is-revealed')) return;
+                card.classList.add('is-revealed');
+                const canvas = card.querySelector('.scratch-canvas');
+                if (canvas) {
+                    canvas.style.transition = 'opacity 0.6s ease';
+                    canvas.style.opacity = '0';
+                    setTimeout(function () { canvas.style.display = 'none'; }, 600);
+                }
+                lanterns.burstCelebration(2);
+
+                // Celebrate with sparkles and popup after scratching!
+                if (!isManualScroll && typeof openDateSparklePopup === 'function') {
+                    setTimeout(function () {
+                        openDateSparklePopup();
+                    }, 400);
+                }
+            }
+
+            function checkAllCardsRevealed() {
+                const revealed = document.querySelectorAll('.scratch-card.is-revealed');
+                if (revealed.length === scratchCards.length) {
+                    if (dateBanner) dateBanner.classList.add('show');
+                    if (!lanterns.hasDateBeenRevealed) {
+                        lanterns.hasDateBeenRevealed = true;
+                        lanterns.burstCelebration(5);
+                    }
+                }
+            }
+
+            function setupScratchCard(card) {
+                const canvas = card.querySelector('.scratch-canvas');
+                if (!canvas) return;
+                const ctx = canvas.getContext('2d');
+                const width = canvas.width;
+                const height = canvas.height;
+
+                // Metallic gold foil texture
+                const grad = ctx.createLinearGradient(0, 0, width, height);
+                grad.addColorStop(0, '#c79632');
+                grad.addColorStop(0.25, '#fae199');
+                grad.addColorStop(0.5, '#d49c36');
+                grad.addColorStop(0.75, '#fff1cc');
+                grad.addColorStop(1, '#a6721d');
+                ctx.fillStyle = grad;
+                ctx.fillRect(0, 0, width, height);
+
+                // Golden sparkle flecks
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.35)';
+                for (let i = 0; i < 35; i++) {
+                    const sx = Math.random() * width;
+                    const sy = Math.random() * height;
+                    ctx.fillRect(sx, sy, 2, 2);
+                }
+
+                // Inner gold border
+                ctx.strokeStyle = 'rgba(255, 245, 200, 0.7)';
+                ctx.lineWidth = 1.5;
+                ctx.strokeRect(5, 5, width - 10, height - 10);
+
+                // Foil typography
+                ctx.fillStyle = '#420917';
+                ctx.font = 'bold 12px Montserrat, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('✦ SCRATCH TO REVEAL ✦', width / 2, height / 2 - 8);
+
+                ctx.fillStyle = '#6e1529';
+                ctx.font = '600 10px Montserrat, sans-serif';
+                const tag = card.getAttribute('data-label') || 'WEDDING DATE';
+                ctx.fillText(tag, width / 2, height / 2 + 10);
+
+                let isDrawing = false;
+                let lastX = 0, lastY = 0;
+                let isRevealed = false;
+
+                function getPos(e) {
+                    const rect = canvas.getBoundingClientRect();
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+                    return {
+                        x: (clientX - rect.left) * (canvas.width / rect.width),
+                        y: (clientY - rect.top) * (canvas.height / rect.height)
+                    };
+                }
+
+                function scratch(e) {
+                    if (!isDrawing || isRevealed) return;
+                    if (e.cancelable) e.preventDefault();
+                    const pos = getPos(e);
+                    ctx.globalCompositeOperation = 'destination-out';
+                    ctx.lineWidth = 30;
+                    ctx.lineCap = 'round';
+                    ctx.lineJoin = 'round';
+                    ctx.beginPath();
+                    ctx.moveTo(lastX, lastY);
+                    ctx.lineTo(pos.x, pos.y);
+                    ctx.stroke();
+                    lastX = pos.x;
+                    lastY = pos.y;
+                    checkProgress();
+                }
+
+                function startScratch(e) {
+                    if (isRevealed) return;
+                    isDrawing = true;
+                    const pos = getPos(e);
+                    lastX = pos.x;
+                    lastY = pos.y;
+                    ctx.globalCompositeOperation = 'destination-out';
+                    ctx.beginPath();
+                    ctx.arc(pos.x, pos.y, 15, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+
+                function stopScratch() {
+                    isDrawing = false;
+                }
+
+                let throttle = null;
+                function checkProgress() {
+                    if (throttle || isRevealed) return;
+                    throttle = setTimeout(function () {
+                        throttle = null;
+                        try {
+                            const imgData = ctx.getImageData(0, 0, width, height);
+                            const data = imgData.data;
+                            let transparent = 0;
+                            const total = data.length / 16;
+                            for (let i = 3; i < data.length; i += 16) {
+                                if (data[i] === 0) transparent++;
+                            }
+                            const pct = (transparent / total) * 100;
+                            if (pct > 30) {
+                                isRevealed = true;
+                                revealCard(card);
+                                checkAllCardsRevealed();
+                            }
+                        } catch (err) { }
+                    }, 100);
+                }
+
+                canvas.addEventListener('mousedown', startScratch);
+                window.addEventListener('mousemove', scratch);
+                window.addEventListener('mouseup', stopScratch);
+
+                canvas.addEventListener('touchstart', startScratch, { passive: false });
+                window.addEventListener('touchmove', scratch, { passive: false });
+                window.addEventListener('touchend', stopScratch);
+                window.addEventListener('touchcancel', stopScratch);
+            }
+
+            scratchCards.forEach(setupScratchCard);
+
+            // Click to re-open sparkle announcement if already revealed
+            scratchCards.forEach(function (card) {
+                card.addEventListener('click', function () {
+                    if (card.classList.contains('is-revealed') && typeof openDateSparklePopup === 'function') {
+                        openDateSparklePopup();
+                    }
+                });
+            });
+
+            // ==========================================
+            // CELEBRATION SPARKLES & DATE POPUP
+            // ==========================================
+            class SparkleCelebration {
+                constructor(canvas) {
+                    this.canvas = canvas;
+                    this.ctx = canvas.getContext('2d');
+                    this.particles = [];
+                    this.animId = null;
+                    this.isRunning = false;
+                    this.dpr = Math.min(window.devicePixelRatio || 1, 2);
+                    this.resize();
+                    window.addEventListener('resize', () => this.resize());
+                }
+
+                resize() {
+                    this.width = window.innerWidth;
+                    this.height = window.innerHeight;
+                    this.canvas.width = this.width * this.dpr;
+                    this.canvas.height = this.height * this.dpr;
+                    this.ctx.setTransform(1, 0, 0, 1, 0, 0);
+                    this.ctx.scale(this.dpr, this.dpr);
+                }
+
+                burst(x, y, count = 120) {
+                    const colors = [
+                        '#ffd700', '#ffe28a', '#ffffff', '#fae199', '#f39c12', '#d4af37', '#fff6d6'
+                    ];
+                    for (let i = 0; i < count; i++) {
+                        const angle = Math.random() * Math.PI * 2;
+                        const speed = 2 + Math.random() * 9;
+                        const type = Math.random() < 0.4 ? 'star' : (Math.random() < 0.7 ? 'circle' : 'confetti');
+                        this.particles.push({
+                            x: x,
+                            y: y,
+                            vx: Math.cos(angle) * speed,
+                            vy: Math.sin(angle) * speed - (Math.random() * 3 + 1),
+                            gravity: 0.12 + Math.random() * 0.08,
+                            drag: 0.96,
+                            size: (type === 'star' ? 4 + Math.random() * 6 : (type === 'confetti' ? 6 + Math.random() * 6 : 2 + Math.random() * 4)),
+                            color: colors[Math.floor(Math.random() * colors.length)],
+                            alpha: 1,
+                            decay: 0.007 + Math.random() * 0.012,
+                            rotation: Math.random() * Math.PI * 2,
+                            vRot: (Math.random() - 0.5) * 0.2,
+                            wobble: Math.random() * Math.PI * 2,
+                            vWobble: 0.05 + Math.random() * 0.08,
+                            type: type
+                        });
+                    }
+                    if (!this.isRunning) {
+                        this.start();
+                    }
+                }
+
+                start() {
+                    this.isRunning = true;
+                    const loop = () => {
+                        if (!this.isRunning) return;
+                        this.update();
+                        this.draw();
+                        this.animId = requestAnimationFrame(loop);
+                    };
+                    this.animId = requestAnimationFrame(loop);
+                }
+
+                stop() {
+                    this.isRunning = false;
+                    if (this.animId) cancelAnimationFrame(this.animId);
+                    this.particles = [];
+                    this.ctx.clearRect(0, 0, this.width, this.height);
+                }
+
+                update() {
+                    if (Math.random() < 0.45) {
+                        const colors = ['#ffd700', '#ffffff', '#fae199', '#ffe28a'];
+                        this.particles.push({
+                            x: this.width * 0.5 + (Math.random() - 0.5) * 380,
+                            y: this.height * 0.5 + (Math.random() - 0.5) * 360,
+                            vx: (Math.random() - 0.5) * 1.5,
+                            vy: -Math.random() * 1.8 - 0.5,
+                            gravity: -0.02,
+                            drag: 0.98,
+                            size: 2.5 + Math.random() * 4,
+                            color: colors[Math.floor(Math.random() * colors.length)],
+                            alpha: 0.9,
+                            decay: 0.018,
+                            rotation: Math.random() * Math.PI * 2,
+                            vRot: (Math.random() - 0.5) * 0.15,
+                            wobble: Math.random() * Math.PI * 2,
+                            vWobble: 0.1,
+                            type: Math.random() < 0.6 ? 'star' : 'circle'
+                        });
+                    }
+
+                    for (let i = this.particles.length - 1; i >= 0; i--) {
+                        const p = this.particles[i];
+                        p.vx *= p.drag;
+                        p.vy = p.vy * p.drag + p.gravity;
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.rotation += p.vRot;
+                        p.wobble += p.vWobble;
+                        p.alpha -= p.decay;
+
+                        if (p.alpha <= 0 || p.y > this.height + 50) {
+                            this.particles.splice(i, 1);
+                        }
+                    }
+                }
+
+                drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius) {
+                    let rot = Math.PI / 2 * 3;
+                    let x = cx;
+                    let y = cy;
+                    let step = Math.PI / spikes;
+
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy - outerRadius);
+                    for (let i = 0; i < spikes; i++) {
+                        x = cx + Math.cos(rot) * outerRadius;
+                        y = cy + Math.sin(rot) * outerRadius;
+                        ctx.lineTo(x, y);
+                        rot += step;
+
+                        x = cx + Math.cos(rot) * innerRadius;
+                        y = cy + Math.sin(rot) * innerRadius;
+                        ctx.lineTo(x, y);
+                        rot += step;
+                    }
+                    ctx.lineTo(cx, cy - outerRadius);
+                    ctx.closePath();
+                    ctx.fill();
+                }
+
+                draw() {
+                    this.ctx.clearRect(0, 0, this.width, this.height);
+
+                    for (const p of this.particles) {
+                        this.ctx.save();
+                        this.ctx.globalAlpha = Math.max(0, p.alpha);
+                        this.ctx.translate(p.x, p.y);
+                        this.ctx.rotate(p.rotation);
+
+                        if (p.type === 'star') {
+                            this.ctx.fillStyle = p.color;
+                            this.ctx.shadowColor = p.color;
+                            this.ctx.shadowBlur = 8;
+                            this.drawStar(this.ctx, 0, 0, 4, p.size, p.size * 0.4);
+                        } else if (p.type === 'confetti') {
+                            this.ctx.fillStyle = p.color;
+                            const width = p.size;
+                            const height = p.size * 0.6 * Math.cos(p.wobble);
+                            this.ctx.fillRect(-width / 2, -height / 2, width, height);
+                        } else {
+                            this.ctx.fillStyle = p.color;
+                            this.ctx.shadowColor = p.color;
+                            this.ctx.shadowBlur = 6;
+                            this.ctx.beginPath();
+                            this.ctx.arc(0, 0, p.size, 0, Math.PI * 2);
+                            this.ctx.fill();
+                        }
+                        this.ctx.restore();
+                    }
+                }
+            }
+
+            const dateSparkleModal = document.getElementById('date-sparkle-modal');
+            const sparkleCanvas = document.getElementById('sparkle-canvas');
+            const sparkleCloseBtn = document.getElementById('sparkle-close-btn');
+            const sparkleBackdrop = document.querySelector('.sparkle-modal-backdrop');
+            const sparkleExploreBtn = document.getElementById('sparkle-explore-btn');
+
+            let sparkleCelebration = null;
+            if (sparkleCanvas) {
+                sparkleCelebration = new SparkleCelebration(sparkleCanvas);
+            }
+
+            function openDateSparklePopup() {
+                if (!dateSparkleModal) return;
+                dateSparkleModal.classList.add('is-open');
+                if (sparkleCelebration) {
+                    sparkleCelebration.start();
+                    const cx = window.innerWidth / 2;
+                    const cy = window.innerHeight / 2;
+                    sparkleCelebration.burst(cx, cy, 140);
+                    setTimeout(() => sparkleCelebration.burst(cx - 110, cy - 60, 55), 180);
+                    setTimeout(() => sparkleCelebration.burst(cx + 110, cy - 60, 55), 340);
+                }
+            }
+            window.openDateSparklePopup = openDateSparklePopup;
+
+            function closeDateSparklePopup() {
+                if (!dateSparkleModal) return;
+                dateSparkleModal.classList.remove('is-open');
+                if (sparkleCelebration) {
+                    setTimeout(() => {
+                        if (!dateSparkleModal.classList.contains('is-open')) {
+                            sparkleCelebration.stop();
+                        }
+                    }, 400);
+                }
+            }
+            window.closeDateSparklePopup = closeDateSparklePopup;
+
+            if (sparkleCloseBtn) sparkleCloseBtn.addEventListener('click', closeDateSparklePopup);
+            if (dateSparkleModal) {
+                dateSparkleModal.addEventListener('click', function (e) {
+                    if (e.target === dateSparkleModal) {
+                        closeDateSparklePopup();
+                    }
+                });
+            }
+            if (sparkleExploreBtn) {
+                sparkleExploreBtn.addEventListener('click', function () {
+                    closeDateSparklePopup();
+                    if (invitationContent) {
+                        setTimeout(() => {
+                            invitationContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 250);
+                    }
+                });
+            }
+            window.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && dateSparkleModal && dateSparkleModal.classList.contains('is-open')) {
+                    closeDateSparklePopup();
+                }
+            });
+
+            // ==========================================
+            // INTERACTIVE PHOTOBOOK CONTROLLER
+            // ==========================================
+            let currentSpread = 0; // 0 = Spread 1, 1 = Spread 2, 2 = Spread 3, 3 = Spread 4
+            const sheet1 = document.getElementById('sheet-1');
+            const sheet2 = document.getElementById('sheet-2');
+            const sheet3 = document.getElementById('sheet-3');
+            const btnPrev = document.getElementById('btn-prev');
+            const btnNext = document.getElementById('btn-next');
+            const indicator = document.getElementById('page-indicator');
+            const book = document.getElementById('photobook');
+            updateBook();
+
+            function updateBook() {
+                if (!sheet1 || !sheet2 || !sheet3) return;
+                if (currentSpread === 0) {
+                    sheet1.classList.remove('is-flipped');
+                    sheet2.classList.remove('is-flipped');
+                    sheet3.classList.remove('is-flipped');
+                    if (btnPrev) btnPrev.disabled = true;
+                    if (btnNext) btnNext.innerHTML = 'Next page <span>›</span>';
+                    if (indicator) indicator.textContent = '1 / 4';
+                } else if (currentSpread === 1) {
+                    sheet1.classList.add('is-flipped');
+                    sheet2.classList.remove('is-flipped');
+                    sheet3.classList.remove('is-flipped');
+                    if (btnPrev) btnPrev.disabled = false;
+                    if (btnNext) btnNext.innerHTML = 'Next page <span>›</span>';
+                    if (indicator) indicator.textContent = '2 / 4';
+                } else if (currentSpread === 2) {
+                    sheet1.classList.add('is-flipped');
+                    sheet2.classList.add('is-flipped');
+                    sheet3.classList.remove('is-flipped');
+                    if (btnPrev) btnPrev.disabled = false;
+                    if (btnNext) btnNext.innerHTML = 'Next page <span>›</span>';
+                    if (indicator) indicator.textContent = '3 / 4';
+                } else if (currentSpread === 3) {
+                    sheet1.classList.add('is-flipped');
+                    sheet2.classList.add('is-flipped');
+                    sheet3.classList.add('is-flipped');
+                    if (btnPrev) btnPrev.disabled = false;
+                    if (btnNext) btnNext.innerHTML = 'First page <span>↺</span>';
+                    if (indicator) indicator.textContent = '4 / 4';
+                }
+            }
+
+            function nextSpread() {
+                if (currentSpread < 3) {
+                    currentSpread++;
+                } else {
+                    currentSpread = 0;
+                }
+                updateBook();
+            }
+
+            function prevSpread() {
+                if (currentSpread > 0) {
+                    currentSpread--;
+                    updateBook();
+                }
+            }
+
+            if (btnNext) {
+                btnNext.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    nextSpread();
+                });
+            }
+
+            if (btnPrev) {
+                btnPrev.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    prevSpread();
+                });
+            }
+
+            // Click left/right half of the book to flip pages
+            if (book) {
+                book.addEventListener('click', (e) => {
+                    // Ignore clicks on enlarged photos or interactive buttons
+                    if (e.target.closest('.polaroid-img-wrap') || e.target.closest('button')) {
+                        return;
+                    }
+                    const rect = book.getBoundingClientRect();
+                    const clickX = e.clientX - rect.left;
+                    if (clickX > rect.width / 2) {
+                        nextSpread();
+                    } else {
+                        prevSpread();
+                    }
+                });
+
+                // Touch swipe gestures
+                let touchStartX = 0;
+                let touchStartY = 0;
+                book.addEventListener('touchstart', (e) => {
+                    if (e.changedTouches && e.changedTouches[0]) {
+                        touchStartX = e.changedTouches[0].screenX;
+                        touchStartY = e.changedTouches[0].screenY;
+                    }
+                }, { passive: true });
+
+                book.addEventListener('touchend', (e) => {
+                    if (!e.changedTouches || !e.changedTouches[0]) return;
+                    const touchEndX = e.changedTouches[0].screenX;
+                    const touchEndY = e.changedTouches[0].screenY;
+                    const diffX = touchEndX - touchStartX;
+                    const diffY = touchEndY - touchStartY;
+                    // Check if it is a horizontal swipe rather than vertical scroll
+                    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+                        if (diffX < 0) {
+                            nextSpread(); // Swiped left -> next
+                        } else {
+                            prevSpread(); // Swiped right -> prev
+                        }
+                    }
+                }, { passive: true });
+            }
+
+            // Keyboard navigation
+            window.addEventListener('keydown', (e) => {
+                if (lightboxModal && lightboxModal.classList.contains('is-open')) return;
+                if (e.key === 'ArrowRight') {
+                    nextSpread();
+                } else if (e.key === 'ArrowLeft') {
+                    prevSpread();
+                }
+            });
+
+            // ==========================================
+            // POLAROID LIGHTBOX MODAL (Click to Enlarge)
+            // ==========================================
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            const lightboxClose = document.getElementById('lightbox-close');
+
+            document.querySelectorAll('.polaroid-img-wrap').forEach((wrap) => {
+                const openImg = (e) => {
+                    e.stopPropagation();
+                    const img = wrap.querySelector('img');
+                    const polaroid = wrap.closest('.polaroid');
+                    const caption = polaroid ? polaroid.querySelector('.polaroid-caption') : null;
+                    if (img && lightboxModal && lightboxImg) {
+                        lightboxImg.src = img.src;
+                        lightboxImg.alt = img.alt || 'Honey & Keval';
+                        if (lightboxCaption) {
+                            lightboxCaption.textContent = caption ? caption.textContent.trim() : '';
+                        }
+                        lightboxModal.classList.add('is-open');
+                    }
+                };
+
+                wrap.addEventListener('click', openImg);
+                wrap.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openImg(e);
+                    }
+                });
+            });
+
+            if (lightboxClose) {
+                lightboxClose.addEventListener('click', () => {
+                    lightboxModal.classList.remove('is-open');
+                });
+            }
+
+            if (lightboxModal) {
+                lightboxModal.addEventListener('click', (e) => {
+                    if (e.target === lightboxModal) {
+                        lightboxModal.classList.remove('is-open');
+                    }
+                });
+            }
+
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('is-open')) {
+                    lightboxModal.classList.remove('is-open');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
